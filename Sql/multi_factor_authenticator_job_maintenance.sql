@@ -1,0 +1,15 @@
+create table if not exists multi_factor_authenticator_job_maintenance(
+mfa_device_id Integer not null,
+down_time_applicable varchar(255) null,
+down_time_notification_mode varchar(255) null,
+from_system varchar(255) null,
+to_system varchar(255) null,
+active_directory varchar(255) null,
+open_id varchar(255) null,
+serverless char null,
+seveerless_model_name varchar(255) null,
+lambdas varchar(255) null,
+queue_name varchar(255) null,
+queue_type varchar(255) null,
+status varchar(255) null,
+constraint multi_factor_authenticator_job_maintenance_pk primary key(mfa_device_id));
